@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Estilo geral do body */
+body {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+  background-color: hsl(0, 0%, 12%);
+  padding: 50px 35px 50px 35px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Estilo da imagem */
+.imagem img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Título principal */
+h1 {
+  font-size: 1.5rem;
+  margin: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/* Localização */
+h2.cidade {
+  font-size: 0.875rem;
+  margin: auto;
+  margin-bottom: 30px;
+  color: hsl(75, 94%, 57%);
+}
+
+/* Descrição */
+h3 {
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Links do menu */
+.links-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links-menu a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 12px 0;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .container {
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  .imagem img {
+    width: 80px;
+    height: 80px;
+  }
+  h3 {
+    margin: 15px 10px;
+    font-size: 0.81rem;
+  }
+  .links-menu a {
+    font-size: 0.75rem;
+    padding: 10px 0;
+  }
+}
